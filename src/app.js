@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import globalErrorHandler from './middlewares/errorHandler.js';
 import categoryRoutes from './routes/categoryRoutes.js';
+import productRoutes from './routes/productRoutes.js';
 
 // Initialize Express application
 const app = express();
@@ -66,8 +67,8 @@ app.get('/api/health', (req, res) => {
  * ============================================
  */
 app.use('/api/categories', categoryRoutes);
+app.use('/api/products', productRoutes);
 // Example: app.use('/api/auth', authRoutes);
-// Example: app.use('/api/products', productRoutes);
 // Example: app.use('/api/users', userRoutes);
 
 /**
