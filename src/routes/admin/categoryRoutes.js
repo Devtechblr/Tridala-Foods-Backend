@@ -2,6 +2,7 @@ import express from 'express';
 import {
   createCategory,
   getAllAdminCategories,
+  getAdminCategoryById,
   updateCategory,
   deleteCategory,
 } from '../../controllers/adminCategoryController.js';
@@ -29,6 +30,13 @@ router.post('/', createCategory);
  * @access  Admin only
  */
 router.get('/', getAllAdminCategories);
+
+/**
+ * @route   GET /api/admin/categories/:id
+ * @desc    Get single category by ID
+ * @access  Admin only
+ */
+router.get('/:id', getAdminCategoryById);
 
 /**
  * @route   PUT /api/admin/categories/:id
