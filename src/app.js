@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import globalErrorHandler from './middlewares/errorHandler.js';
 import categoryRoutes from './routes/categoryRoutes.js';
 import productRoutes from './routes/productRoutes.js';
+import authRoutes from './routes/authRoutes.js';
 
 // Initialize Express application
 const app = express();
@@ -66,9 +67,9 @@ app.get('/api/health', (req, res) => {
  * API ROUTES
  * ============================================
  */
+app.use('/api/auth', authRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
-// Example: app.use('/api/auth', authRoutes);
 // Example: app.use('/api/users', userRoutes);
 
 /**
