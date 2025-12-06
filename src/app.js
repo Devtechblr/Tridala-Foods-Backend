@@ -6,6 +6,7 @@ import globalErrorHandler from './middlewares/errorHandler.js';
 import categoryRoutes from './routes/categoryRoutes.js';
 import productRoutes from './routes/productRoutes.js';
 import authRoutes from './routes/authRoutes.js';
+import adminRoutes from './routes/adminRoutes.js';
 
 // Initialize Express application
 const app = express();
@@ -70,6 +71,7 @@ app.get('/api/health', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/admin', adminRoutes);
 // Example: app.use('/api/users', userRoutes);
 
 /**
