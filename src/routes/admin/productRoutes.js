@@ -5,7 +5,7 @@ import {
   getAdminProductById,
   updateProduct,
   deleteProduct,
-} from '../controllers/adminProductController.js';
+} from '../../controllers/adminProductController.js';
 
 /**
  * ============================================

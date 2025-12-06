@@ -3,7 +3,7 @@ import {
   getAllAdminUsers,
   getAdminUserById,
   updateUserRole,
-} from '../controllers/adminUserController.js';
+} from '../../controllers/adminUserController.js';
 
 /**
  * ============================================

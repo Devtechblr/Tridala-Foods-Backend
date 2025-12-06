@@ -4,7 +4,7 @@ import {
   getAllAdminCategories,
   updateCategory,
   deleteCategory,
-} from '../controllers/adminCategoryController.js';
+} from '../../controllers/adminCategoryController.js';
 
 /**
  * ============================================

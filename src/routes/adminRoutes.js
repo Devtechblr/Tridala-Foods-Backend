@@ -1,10 +1,10 @@
 import express from 'express';
-import { authMiddleware } from '../../middlewares/authMiddleware.js';
-import { adminOnly } from '../../middlewares/adminMiddleware.js';
-import adminProductRoutes from './productRoutes.js';
-import adminCategoryRoutes from './categoryRoutes.js';
-import adminOrderRoutes from './orderRoutes.js';
-import adminUserRoutes from './userRoutes.js';
+import { authMiddleware } from '../middlewares/authMiddleware.js';
+import { adminOnly } from '../middlewares/adminMiddleware.js';
+import adminProductRoutes from './admin/productRoutes.js';
+import adminCategoryRoutes from './admin/categoryRoutes.js';
+import adminOrderRoutes from './admin/orderRoutes.js';
+import adminUserRoutes from './admin/userRoutes.js';
 
 /**
  * ============================================

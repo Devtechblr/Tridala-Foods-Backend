@@ -3,7 +3,7 @@ import {
   getAllAdminOrders,
   getAdminOrderById,
   updateOrderStatus,
-} from '../controllers/adminOrderController.js';
+} from '../../controllers/adminOrderController.js';
 
 /**
  * ============================================
